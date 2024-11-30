@@ -4,6 +4,8 @@ import Nat "mo:base/Nat";
 import Time "mo:base/Time";
 import Float "mo:base/Float";
 import Int64 "mo:base/Int64";
+import Text "mo:base/Text";
+import Array "mo:base/Array";
 
 actor Test{
   var a = 100;
@@ -57,5 +59,13 @@ actor Test{
 
     var message = "the current time is"#" "#Int.toText(currentTime);
     Debug.print(message);
+  };
+
+  public func register(){
+
+  };
+
+  public query func selector(): async Text{
+    return "mainStorage";
   };
 }

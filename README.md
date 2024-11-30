@@ -1,3 +1,3 @@
-# `PioChat`
+# `PioNFT`
 
-THIS IS GOING TO BE AN INSTATN MESSAGING dAPP USING INTERNET COMPUTER AND MOTOKO
+A NFT marketplace powerd by motoko
