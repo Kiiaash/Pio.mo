@@ -1,7 +1,9 @@
-import {hello, hello_backend} from "../../declarations/hello_backend";
+import { hello, hello_backend } from "../../declarations/hello_backend/hello_backend.did";
 
-let title = document.getElementById('title');
-title.addEventListener('click',()=>{
-    let a = hello_backend.Mult;
-    console.log(a);
-});
+document.addEventListener('load', () => {
+    let title = document.getElementById('add');
+    title.addEventListener('click', () => {
+        let a = hello_backend.Add(5, 10);
+        console.log('it works');
+    });
+})

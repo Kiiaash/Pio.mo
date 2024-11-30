@@ -16,9 +16,9 @@ actor Test{
     Debug.print(debug_show(b));
   };
 
-  public func Add(firstNum:Int,secNum:Int){
-    var total = firstNum + secNum;
-    Debug.print(debug_show(total));
+  public func Add(firstNum:Int,secNum:Int): async Int{
+    var total:Int = firstNum + secNum;
+    return total;
   };
 
   public func WithDraw(withDrawVal:Nat){
